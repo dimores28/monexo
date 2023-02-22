@@ -1,32 +1,200 @@
 .about {
-   margin-top: 15px;
    width: 100%;
    height: 100vh;
+   background: linear-gradient(180.36deg, #B8DFED 46.73%, #C9C5EB 97.72%);
 
-   background-color: linear-gradient(180.36deg, #B8DFED 46.73%, #C9C5EB 97.72%);
-   background: #B8DFED url('/images/about/about_bg.webp') right center no-repeat;
-   background-size: contain;
+   position: relative;
+
+   &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: url('/images/about/about_bg.webp');
+      background-position: right center;
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+
+   &__logo {
+      position: absolute;
+      width: 116px;
+      height: 116px;
+      right: 20%;
+      top: 17%;
+      background: url('/images/about/logo.png') center center no-repeat;
+      background-size: contain;
+
+      animation: swayingSigns 4s infinite;
+   }
 }
+
 
 .about-us {
    width: 55%;
    padding-top: 190px;
+   position: relative;
+   z-index: 2;
 
    &__desc {
       font-weight: 300;
-      font-size: 32px;
+      font-size: 28px;
       line-height: 112.5%;
       color: #2C2C2C;
+      margin-bottom: 20px;
    }
 
    &__video {
-      margin-top: 91px;
+      margin-top: 71px;
+      vertical-align: middle;
    }
 
    &__text {
       font-weight: 500;
-      font-size: 36px;
+      font-size: 32px;
       line-height: 100%;
       color: #2C2C2C;
+      display: inline-block;
+      max-width: 432px;
+   }
+
+   &__play {
+      display: block;
+      margin-bottom: -5px;
+      position: relative;
+   }
+
+   &__img-wrap {
+      display: inline-block;
+      position: relative;
+   }
+
+   &__img-wrap::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 41px;
+      height: 47px;
+      background: url('/images/about/arrow.svg') center center no-repeat;
+      background-size: contain;
+      top: -14px;
+      right: -50px;
+      animation: arrow 2s infinite;
+   }
+}
+
+@media (max-width: 1517px) {
+   .about__logo {
+      right: 26%;
+   }
+}
+
+@media (max-width: 1281px) {
+   .about__logo {
+      right: 30%;
+   }
+
+   .about {
+      height: 100%;
+   }
+
+   .about-us__video {
+      margin-top: 55px;
+      padding-bottom: 10px;
+   }
+}
+
+@media (max-width: 1140px) {
+   .about__logo {
+      right: 34%;
+   }
+
+   .about-us {
+
+      &__desc {
+         font-size: 24px;
+      }
+
+      &__text {
+         font-size: 28px;
+      }
+   }
+}
+
+@media (max-width: 956px) {
+   .about__logo {
+      display: none;
+   }
+
+   .about__bg {
+      display: none;
+   }
+
+   .about-us {
+      width: 65%; 
+
+      &__text {
+         max-width: 378px;
+      }
+   }
+}
+
+@media (max-width: 810px) {
+   .about-us {
+      width: 100%; 
+   }
+}
+
+@media (max-width: 768px) {
+   .about-us {
+      padding-top: 150px;
+      padding-bottom: 30px;
+   }
+}
+
+@media (max-width: 534px) {
+   .about-us__text {
+      display: block;
+      margin-bottom: 40px;
+   }
+}
+
+@media (max-width: 480px) {
+   &__desc {
+      font-size: 18px;
+   }
+
+   &__text {
+      font-size: 24px;
+   }
+}
+
+@keyframes swayingSigns {
+   0% {
+      transform: translateY(0) rotateY(0deg);
+
+   }
+
+   50% {
+      transform: translateY(10px) rotateY(35deg);
+   }
+
+   100% {
+      transform: translateY(0) rotateY(0deg);
+   }
+}
+
+@keyframes arrow {
+   0% {
+      transform: scale(100%) rotateZ(-15deg);
+   }
+
+   50% {
+      transform: scale(130%) rotateZ(0);
+   }
+    
+   100% {
+      transform: scale(100%) rotateZ(-15deg);
    }
 }
