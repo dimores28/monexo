@@ -1,0 +1,158 @@
+.offers {
+   width: 100%;
+   height: 100vh;
+   padding-top: 200px;
+
+   background: linear-gradient(106.46deg, #FFE5A5 -1.98%, #C7FFA5 95.13%);
+}
+
+.case {
+   width: calc(100% / 12 * 5 - 30px);
+   margin-left: 15px;
+   margin-right: 15px;
+
+   &__text {
+      font-family: 'Everett';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 112.5%;
+      color: #2C2C2C;
+      margin-bottom: 24px;
+   }
+}
+
+@media (max-width: 1140px) {
+   .case {
+
+      &__text {
+         font-size: 22px;
+      }
+   }
+}
+
+@media (max-width: 480px) {
+   .case {
+
+      &__text {
+         font-size: 18px;
+      }
+   }
+}
+
+.cards {
+   width: calc(100% / 12 * 7 - 30px);
+   margin-left: 15px;
+   margin-right: 15px;
+
+   &__btn-group {
+      margin-bottom: 30px;
+      display: flex;
+   }
+
+   &__btn-group button {
+      margin-right: 25px;
+   }
+
+   &__item {
+      background: #FFFFFF;
+      border: 3px solid #2C2C2C;
+      border-radius: 32px;
+      padding: 40px 42px 50px;
+   }
+
+   &__header {
+      font-family: 'Everett';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 38px;
+      line-height: 87.5%;
+      color: #2C2C2C;
+      margin-bottom: 16px;
+   }
+
+   &__list {
+      font-family: 'Everett';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 112.5%;
+      color: #2C2C2C;
+      list-style-type: disc;
+      padding-left: 18px;
+      margin-bottom: 22px;
+   }
+
+   &__list li{
+      margin-bottom: 4px;
+   }
+
+   &__content {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+
+.table {
+
+   &__header,
+   &__footer,
+   &__ticker {
+      font-family: 'Everett';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 115%;
+      color: #2C2C2C;
+      border-top: 1px solid rgba(100, 37, 254, 0.38);
+   }
+
+   &__header {
+      margin-bottom: 20px;
+   }
+
+   &__header,
+   &__footer {
+      padding-top: 14px;
+   }
+
+   &__footer {
+      display: flex;
+      justify-content: space-between;
+      min-width: 320px;
+   }
+
+   &__ticker {
+      border-top: unset;
+   }
+
+   &__body {
+      display: flex;
+   }
+
+   &__ceil:first-child {
+      border-right: 1px solid rgba(100, 37, 254, 0.38);
+   }
+
+   &__ceil {
+      padding: 0 30px 8px;
+      margin-bottom: 21px;
+   }
+
+   &__label {
+      font-family: 'Everett';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 115%;
+      text-transform: lowercase;
+      color: rgba(100, 37, 254, 0.43);
+      margin-bottom: 21px;
+   }
+}
+
+@media (max-width: 1500px) {
+   .cards {
+      transform: scale(80%);
+   }
+}
