@@ -13,7 +13,7 @@ window.$ = $;
 
 
 $('#pagepiling').pagepiling({
-    anchors: ['home-page', 'about', 'offers',  'fourthPage', 'lastPage'],
+    anchors: ['home-page', 'about', 'offers',  'reviews', 'partners'],
     menu: '#menu',
     // normalScrollElements: '#offers, .element2'
 });
@@ -22,13 +22,21 @@ $('.screan-shot').on('click', function() {
   $(this).toggleClass('show-screanshot');
 });
 
+
+$('#reviews-slider').on('init', function(event, slick){
+  var totalSlides = slick.$slides.length;
+
+  $('.slider-paginatioin__total').text(totalSlides);
+});
+
 $('#reviews-slider').slick({
     dots: false,
+    centerMode: true,
     arrows: true,
     infinite: true,
     speed: 300,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,
@@ -55,4 +63,11 @@ $('#reviews-slider').slick({
       }
     ]
   });
+
+
+
+$('#reviews-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+  $('.slider-paginatioin__curent').text(currentSlide + 1);
+  console.log('total: ', slick.$slides.length);
+});
 

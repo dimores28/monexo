@@ -1,8 +1,8 @@
 .reviews {
     width: 100%;
-    height: 100%;
 
     padding-top: 200px;
+    padding-bottom: 140px;
     background: linear-gradient(106.46deg, #C7FFA5 28.76%, #9EC6FA 95.13%);
 }
 
@@ -14,15 +14,106 @@
     font-size: 0;
 
     position: absolute;
-    bottom: -25px;
+    bottom: -70px;
 }
 
 .slick-prev {
     background: url('/images/reviews/left.svg') center center no-repeat;
     background-size: contain;
+    left: calc(50% - 84px);
 }
 
 .slick-next {
     background: url('/images/reviews/right.svg') center center no-repeat;
     background-size: contain;
+    right: calc(50% - 84px);
+}
+
+.slide {
+    position: relative;
+    background: #FFFFFF;
+    border: 3px solid #2C2C2C;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    min-height: 600px;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+
+    &__text {
+        font-family: 'Everett';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 112.5%;
+        color: #2C2C2C;
+        padding-top: 64px;
+        padding-right: 48px;
+        padding-left: 25px;
+    }
+
+    &__user {
+        position: absolute;
+        z-index: 10;
+        left: 25px;
+        bottom: 35px;
+        background: #C7FFA5;
+        border-radius: 8px;
+        padding: 15px 38px;
+        font-family: 'Everett';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 29px;
+        color: #2C2C2C;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 48px;
+        left: 25px;
+        background: #6425FE;
+        border-radius: 8px;
+        padding: 15px 38px;
+        font-family: 'Everett';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 38px;
+        color: #FFFFFF;
+        z-index: 5;
+    }
+
+    &__video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 10px;
+        display: inline-block;
+    }
+}
+
+.slide:hover {
+    transform: scale(110%);
+}
+
+.slider-wrap {
+    position: relative;
+}
+
+.slider-paginatioin {
+    font-family: 'Everett';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 115.5%;
+    color: #2C2C2C;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -72px;
 }

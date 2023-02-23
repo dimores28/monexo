@@ -16,10 +16,7 @@
 @slick-opacity-on-hover: 1;
 @slick-opacity-not-active: 0.25;
 
-/* Slider */
-.slick-loading .slick-list{
-    background: #fff url('@{slick-loader-path}ajax-loader.gif') center center no-repeat;
-}
+
 
 /* Arrows */
 .slick-prev,
@@ -33,20 +30,15 @@
     cursor: pointer;
     background: transparent;
     color: transparent;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    bottom: -25px;
+    // -webkit-transform: translate(0, -50%);
+    // -ms-transform: translate(0, -50%);
+    // transform: translate(0, -50%);
     padding: 0;
     border: none;
     outline: none;
     &:hover, &:focus {
-        outline: none;
-        background: transparent;
-        color: transparent;
-        &:before {
-            opacity: @slick-opacity-on-hover;
-        }
+        transform: scale(110%);
     }
     &.slick-disabled:before {
         opacity: @slick-opacity-not-active;
@@ -54,24 +46,12 @@
 }
 
 .slick-prev:before, .slick-next:before {
-    font-family: @slick-font-family;
     font-size: 20px;
     line-height: 1;
     color: @slick-arrow-color;
     opacity: @slick-opacity-default;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    
-    & when ( @slick-font-family = 'slick' ) {
-        /* Icons */
-        @font-face {
-            font-family: 'slick';
-            font-weight: normal;
-            font-style: normal;
-            src: url('@{slick-font-path}slick.eot');
-            src: url('@{slick-font-path}slick.eot?#iefix') format('embedded-opentype'), url('@{slick-font-path}slick.woff') format('woff'), url('@{slick-font-path}slick.ttf') format('truetype'), url('@{slick-font-path}slick.svg#slick') format('svg');
-        }
-    }
 }
 
 

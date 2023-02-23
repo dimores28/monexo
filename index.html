@@ -93,10 +93,10 @@
                         >
                      </li>
                      <li>
-                        <a href="#" class="menu__item">Reviews</a>
+                        <a data-menuanchor="reviews" href="#reviews" class="menu__item">Reviews</a>
                      </li>
                      <li>
-                        <a href="#" class="menu__item">Partners</a>
+                        <a data-menuanchor="partners" href="#partners" class="menu__item">Partners</a>
                      </li>
                   </ul>
                </nav>
@@ -366,22 +366,55 @@
             </section>
          </div>
          <div class="section">
-            <section class="reviews page-container">
+            <section class="reviews page-container" id="reviews">
                <div class="container">
                   <h2 class="section-header">Monexo reviews</h2>
 
-                  <div class="reviews-slider" id="reviews-slider">
-                     <div>your content</div>
-                     <div>your content</div>
-                     <div>your content</div>
-                     <div>your content</div>
-                     <div>your content</div>
-                     <div>your content</div>
+                  <div class="slider-wrap">
+                     <div class="reviews-slider" id="reviews-slider">
+                        <div class="slide">
+                           <p class="slide__text">
+                              Execution of a notification about each accrual you have transparent statistics
+                              know what tomorrow is thanks to Monexo
+                           </p>
+                           <p class="slide__user">Victor Pushko</p>
+                        </div>
+                        <div class="slide">
+                           <button class="slide__btn">Watch The Video</button>
+                           <video
+                                 poster="images/reviews/2.jpg"
+                                 muted="muted"
+                                 class="slide__video"
+                                 id="player">
+                                 <source
+                                    src=""
+                                    type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                              </video>
+                           <p class="slide__user">Victor Pushko</p>
+                        </div>
+                        <div class="slide">your content</div>
+                        <div class="slide">your content</div>
+                        <div class="slide">your content</div>
+                        <div class="slide">your content</div>
+                     </div>
+                     <div class="slider-paginatioin">
+                        <span class="slider-paginatioin__curent">1</span>/
+                        <span class="slider-paginatioin__total">0</span>
+                     </div>
                   </div>
                </div>
             </section>
          </div>
-         <div class="section">Some section</div>
+         <div class="section">
+            <section class="partners page-container" id="partners">
+
+            </section>
+         </div>
+         <div class="section">
+            <footer class="footer page-container" id="footer">
+
+            </footer>
+         </div>
       </main>
 
       <script type="module" src="/main.js"></script>
