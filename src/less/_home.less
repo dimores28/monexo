@@ -35,6 +35,8 @@
         font-size: 36px;
         line-height: 120%;
         margin-bottom: 71px;
+        position: relative;
+        z-index: 11;
     }
 }
 
@@ -79,6 +81,10 @@
 }
 
 @media (max-width: 920px) {
+    .home-page {
+        height: 100%;
+    }
+    
     .offer {
         max-width: 65%;
 
@@ -94,6 +100,7 @@
 }
 
 @media (max-width: 750px) {
+
     .offer {
         max-width: 75%;
         
@@ -126,6 +133,11 @@
         &__title {
             font-size: 64px;
         } 
+    }
+
+    .home-page {
+        background:  linear-gradient(180deg, #BDF3CC 0%, #C5EEC7 35%, #B3EEC9 98.23%);
+        padding-right: 30px;
     }
 }
 

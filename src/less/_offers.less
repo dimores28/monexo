@@ -109,6 +109,12 @@
 
    &__header {
       margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+   }
+
+   &__header img {
+      margin-right: 8px;
    }
 
    &__header,
@@ -155,4 +161,73 @@
    .cards {
       transform: scale(80%);
    }
+}
+
+@media (max-width: 1368px) {
+   .offers {
+      height: unset;
+      padding-bottom: 80px;
+   }
+
+   .cards__content {
+      flex-direction: column;
+   }
+
+   .cards {
+      transform: scale(90%);
+   }
+
+   .table__footer {
+      margin-bottom: 30px;
+   }
+}
+
+@media (max-width: 1023px) {
+   .case {
+      width: calc(100% / 12 * 11 - 30px);
+      margin-bottom: 30px;
+   }
+
+   .cards {
+      width: calc(100% / 12 * 11 - 30px);
+      transform: scale(100%);
+   }
+}
+
+@media (max-width: 640px) {
+   .cards__btn-group {
+      flex-wrap: wrap;
+   }
+
+   .cards__btn-group button {
+      margin-bottom: 20px;
+      width: 160px;
+   }
+}
+
+@media (max-width: 540px) {
+   .cards__item {
+      padding: 30px 22px 40px;
+   }
+}
+
+@media (max-width: 440px) {
+   .table__footer {
+      flex-direction: column;
+      min-width: unset;
+   } 
+
+   .table__footer > span {
+      margin-top: 10px;
+   }
+
+   .table__ticker {
+      font-size: 28px;
+   }
+
+   .table__ceil {
+      padding: 0 20px 8px;
+      margin-bottom: 21px;
+  }
+  
 }

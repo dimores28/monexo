@@ -1,5 +1,55 @@
 .start-investing {
    width: 100%;
    height: 100%;
-   background: linear-gradient(106.46deg, #FABEFF 28.76%, #9EC6FA 95.13%);
+   padding-top: 200px;
+   padding-bottom: 40px;
+   background:  linear-gradient(106.46deg, #FABEFF 28.76%, #9EC6FA 95.13%);
+
+   &__text {
+      font-family: 'Everett';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 112.5%;
+      color: #2C2C2C;
+   }
+}
+
+.invest-bg {
+   height: 100%;
+   background-image: url("/images/invest/mony.webp"), url("/images/invest/table.webp");
+   background-repeat: no-repeat;
+   background-position: 100% center, left bottom;
+   background-size: contain, 70%;
+}
+
+@media (max-width: 1024px) {
+   .invest-bg {
+      background-size: 50%, 70%;
+   }
+}
+
+@media (max-width: 860px) {
+   .invest-bg {
+      background-size: 55%, 70%;
+   }
+}
+
+@media (max-width: 720px) {
+   .invest-bg {
+      background-size: 60%, 75%;
+   }
+}
+
+@media (max-width: 660px) {
+   .invest-bg {
+      background-image: url("/images/invest/table.webp");
+      background-size: contain;
+   }
+}
+
+@media (max-width: 360px) {
+   .invest-bg {
+      background-size: 110%;
+   }
 }
