@@ -18,6 +18,10 @@ $('#pagepiling').pagepiling({
     // normalScrollElements: '#offers, .element2'
 });
 
+$('.screan-shot').on('click', function() {
+  $(this).toggleClass('show-screanshot');
+});
+
 $('#reviews-slider').slick({
     dots: false,
     arrows: true,
