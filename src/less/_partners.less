@@ -1,14 +1,14 @@
 .partners {
-    padding-top: 100px;
-    background: linear-gradient(106.46deg, #CEBADF -1.98%, #F0D2E9 95.13%);
+    padding-top: 200px;
+    padding-bottom: 80px;
+    // background: linear-gradient(106.46deg, #CEBADF -1.98%, #F0D2E9 95.13%);
+    background-image: url('/images/partners/partners_bg.png'), linear-gradient(106.46deg, #CEBADF -1.98%, #F0D2E9 95.13%);
+    background-size: contain, 100%;
+    background-position: center, center;
+    background-repeat: no-repeat;
 }
 
 .partners-bg  {
-    padding-top: 100px;
-    background: url('/images/partners/partners_bg.webp') right center no-repeat;
-    background-size: contain;
-    padding-bottom: 80px;
-
     position: relative;
 }
 
@@ -86,6 +86,54 @@
     background: url('/images/partners/bottom.png') center center no-repeat;
     top: 33%;
     right: 12%;
+}
+
+@media (max-width: 1180px) {
+    .top {
+        top: 0%; 
+        right: 15%;
+    }
+
+    .centr {
+        top: 17%;
+        right: 27%;
+    }
+
+    .bottom {
+        top: 27%;
+        right: 8%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .top {
+        top: 10%; 
+        right: 12%;
+    }
+
+    .centr {
+        top: 17%; 
+        right: 30%;
+    }
+
+    .bottom {
+        top: 27%;
+        right: 8%;
+    }
+}
+
+@media (max-width: 700px) {
+    .top,
+    .centr,
+    .bottom {
+        display: none;
+    }  
+}
+
+@media (max-width: 600px) {
+    .partners {
+        background: linear-gradient(106.46deg, #CEBADF -1.98%, #F0D2E9 95.13%);
+    }
 }
 
 @keyframes fluctuations {

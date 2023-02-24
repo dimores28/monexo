@@ -91,6 +91,11 @@
     &__item.active {
         color: #6425FE;
     }
+
+}
+
+.active a{
+    color: #6425FE;
 }
 
 .mobile-btn-block {
@@ -126,6 +131,11 @@
     z-index: 5;
     opacity: 0;
     cursor: pointer;
+}
+
+.checkbox__label {
+    font-size: 0;
+    opacity: 0;
 }
 
 .burger-btn .hamburger-lines {
@@ -185,17 +195,17 @@
 
 @media (min-width: 1400px) {
     .menu__item {
-        margin: 0 30px;
+        margin: 0 20px;
     }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
     .show {
         display: none;
     }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
     .menu {
         display: none;
     }

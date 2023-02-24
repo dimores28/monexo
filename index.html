@@ -25,18 +25,21 @@
          </div>
 
          <nav>
-            <ul class="mobile-menu">
-               <li>
-                  <a href="#" class="mobile-menu__item">About company</a>
+            <ul class="mobile-menu" id="menu">
+               <li data-menuanchor="home" class="active">
+                  <a href="#home" class="mobile-menu__item">Home</a>
                </li>
-               <li>
-                  <a href="#" class="mobile-menu__item">Advantages</a>
+               <li data-menuanchor="about">
+                  <a href="#about" class="mobile-menu__item">About company</a>
                </li>
-               <li>
-                  <a href="#" class="mobile-menu__item">Reviews</a>
+               <li data-menuanchor="offers">
+                  <a href="#offers" class="mobile-menu__item">Advantages</a>
                </li>
-               <li>
-                  <a href="#" class="mobile-menu__item">Partners</a>
+               <li data-menuanchor="reviews">
+                  <a href="#reviews" class="mobile-menu__item">Reviews</a>
+               </li>
+               <li data-menuanchor="partners">
+                  <a href="#partners" class="mobile-menu__item">Partners</a>
                </li>
             </ul>
          </nav>
@@ -46,6 +49,7 @@
       <div class="container">
          <div class="header-container">
             <div class="burger-btn">
+               <label for="burger-btn" class="checkbox__label">Checkbox burger button</label>
                <input class="checkbox" type="checkbox" id="burger-btn" />
                <div class="hamburger-lines">
                   <span class="line line1"></span>
@@ -62,20 +66,20 @@
 
             <nav>
                <ul class="menu" id="menu">
-                  <li>
-                     <a data-menuanchor="home-page" href="#home-page" class="menu__item active">Home</a>
+                  <li data-menuanchor="home" class="active">
+                     <a href="#home" class="menu__item">Home</a>
                   </li>
-                  <li>
-                     <a data-menuanchor="about" href="#about" class="menu__item">About company</a>
+                  <li data-menuanchor="about">
+                     <a class="menu__item" href="#about">About company</a>
                   </li>
-                  <li>
-                     <a data-menuanchor="offers" href="#offers" class="menu__item">Advantages</a>
+                  <li data-menuanchor="offers">
+                     <a class="menu__item" href="#offers">Advantages</a>
                   </li>
-                  <li>
-                     <a data-menuanchor="reviews" href="#reviews" class="menu__item">Reviews</a>
+                  <li data-menuanchor="reviews">
+                     <a class="menu__item" href="#reviews">Reviews</a>
                   </li>
-                  <li>
-                     <a data-menuanchor="partners" href="#partners" class="menu__item">Partners</a>
+                  <li data-menuanchor="partners">
+                     <a  class="menu__item" href="#partners">Partners</a>
                   </li>
                </ul>
             </nav>
@@ -92,7 +96,7 @@
 
    <main id="pagepiling" class="main">
       <div class="section">
-         <section class="home-page page-container" id="home-page">
+         <section class="home-page page-container" id="home">
             <div class="container">
                <div class="offer">
                   <h2 class="offer__sub-title">Turn on features</h2>
@@ -112,7 +116,7 @@
             </div>
          </section>
       </div>
-      <div class="section">
+      <div class="section pp-scrollable">
          <section class="about page-container" id="about">
             <div class="about__bg"></div>
             <div class="about__logo"></div>
@@ -260,7 +264,7 @@
          </section>
       </div>
       <div class="section">
-         <section class="start-investing page-container" id="start-investing">
+         <section class="start-investing page-container" id="investing">
             <div class="container invest-bg">
                <h2 class="section-header start-investing__header">
                   How to start investing?
@@ -270,7 +274,7 @@
          </section>
       </div>
       <div class="section">
-         <section class="provide page-container">
+         <section class="provide page-container" id="provide">
             <div class="container provide-bg">
                <h2 class="section-header">We provide you:</h2>
 
@@ -446,7 +450,7 @@
          </section>
       </div>
       <div class="section">
-         <footer class="footer page-container" id="footer">
+         <footer class="footer page-container">
             <div class="container">
                <div class="footer-content">
                   <div class="wrapper">

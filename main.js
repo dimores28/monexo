@@ -13,9 +13,9 @@ window.$ = $;
 
 
 $('#pagepiling').pagepiling({
-    anchors: ['home-page', 'about', 'offers',  'reviews', 'partners'],
+    anchors: ['home', 'about', 'offers', 'investing', 'provide', 'reviews', 'partners'],
     menu: '#menu',
-    // normalScrollElements: '#offers, .element2'
+    normalScrollElements: '#reviews, .reviews'
 });
 
 $('.screan-shot').on('click', function() {
