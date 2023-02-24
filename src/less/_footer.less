@@ -1,8 +1,44 @@
 .footer {
+    width: 100%;
+    height: 100vh;
+    padding-top: 250px;
+    padding-bottom: 100px;
     background: #2C2C2C;
+
+    &__text {
+        font-family: 'Everett';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 112.5%;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 790px;
+
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    &__text a{
+        color: #FFFFFF; 
+    }
+}
+
+.footer-logo {
+    margin-bottom: 25px;
 }
 
 .social {
+
+    &__text {
+        font-family: 'Everett';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+        color: #FFFFFF;
+        margin-bottom: 6px;
+    }
 
     &__linck {
         display: inline-block;
@@ -21,5 +57,115 @@
     &__linck:focus {
         background: transparent;
         border: 1px solid #FFFFFF
+    }
+
+    &__linck_centr {
+        margin: 0 20px;
+    }
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 62px;
+}
+
+.footer-navigates {
+    display: flex;
+}
+
+.footer-menu {
+    margin-left: 32px;
+
+    &__item {
+        margin-bottom: 30px;
+    }
+
+    &__item a {
+        font-family: 'Everett';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 38px;
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: all 0.3s ease-in;
+    }
+
+    &__item a:hover,
+    &__item a:active,
+    &__item a:focus {
+        color: #6425FE;
+    }
+}
+
+.clasic a {
+    color: #6425FE;
+    text-decoration: underline;
+}
+
+
+.clasic a:hover,
+.clasic a:active,
+.clasic a:focus {
+    color: #FFFFFF;
+}
+
+@media (max-width: 860px) {
+    .footer {
+        height: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .wrapper {
+        margin-bottom: 36px;
+    }
+
+    .footer-menu {
+        margin-left: 0;
+        margin-right: 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-menu {
+        &__item a {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+
+    .social__text {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 514px) {
+    .footer-navigates {
+        flex-direction: column;
+    }
+
+    .footer-menu {
+        margin-bottom: 30px;
+        &__item a {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    .social__text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .footer-logo img {
+        width: 208px;
+        height: auto;
     }
 }
