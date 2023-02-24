@@ -1,5 +1,5 @@
 import './main.less'
-import $ from 'jquery';
+import $, { each } from 'jquery';
 import  './src/js/jquery.pagepiling.min.js';
 import './src/js/slick.min.js'
 
@@ -35,30 +35,30 @@ $('#reviews-slider').slick({
     arrows: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    centerPadding: '10px',
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
+          slidesToShow: 2,
+          slidesToScroll: 2,
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 720,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          centerPadding: '5px',
         }
       }
     ]
@@ -68,6 +68,23 @@ $('#reviews-slider').slick({
 
 $('#reviews-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
   $('.slider-paginatioin__curent').text(currentSlide + 1);
-  console.log('total: ', slick.$slides.length);
+
 });
 
+$('#reviews-slider').each(function() {
+
+  var $slide = $('.slide__video');
+  var height = $slide.height();
+
+  $('.slide').css('height', height + 'px');
+});
+
+
+$('#reviews-slider').on('setPosition', function(){
+
+  var $slide = $('.slide__video');
+  var height = $slide.height();
+
+  $('.slide').css('height', height + 'px');
+
+});
