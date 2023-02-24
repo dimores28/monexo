@@ -11,12 +11,17 @@ window.$ = $;
      nav.classList.toggle('show');
 });
 
+const pageWidth = document.documentElement.scrollWidth;
 
-$('#pagepiling').pagepiling({
+if (pageWidth > 920) {
+  $('#pagepiling').pagepiling({
     anchors: ['home', 'about', 'offers', 'investing', 'provide', 'reviews', 'partners'],
     menu: '#menu',
-    normalScrollElements: '#reviews, .reviews'
-});
+    verticalCentered: false,
+  });
+}
+
+
 
 $('.screan-shot').on('click', function() {
   $(this).toggleClass('show-screanshot');
