@@ -13,7 +13,7 @@ window.$ = $;
 
 const pageWidth = document.documentElement.scrollWidth;
 
-if (pageWidth > 920) {
+if (pageWidth > 320) {
   $('#pagepiling').pagepiling({
     anchors: ['home', 'about', 'offers', 'investing', 'provide', 'reviews', 'partners'],
     menu: '#menu',
@@ -93,3 +93,10 @@ $('#reviews-slider').on('setPosition', function(){
   $('.slide').css('height', height + 'px');
 
 });
+
+$('.mobile-menu__item').on('click', function() {
+  $('.mobile-menu__item').removeClass('active');
+  $(this).addClass('active');
+
+  $('#burger-btn').trigger('click');
+})
