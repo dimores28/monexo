@@ -36,6 +36,33 @@ scrollbar-track {
     background-color: #9EC6FA;
 }
 
+@media (min-width: 620px) {
+    scrollbar {
+        width: 1px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 1px;
+    }
+
+    scrollbar-thumb {
+        background-color: transparent;
+        
+    }
+    
+    scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;

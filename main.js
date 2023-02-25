@@ -13,7 +13,7 @@ window.$ = $;
 
 const pageWidth = document.documentElement.scrollWidth;
 
-if (pageWidth > 320) {
+if (pageWidth > 620) {
   $('#pagepiling').pagepiling({
     anchors: ['home', 'about', 'offers', 'investing', 'provide', 'reviews', 'partners'],
     menu: '#menu',
