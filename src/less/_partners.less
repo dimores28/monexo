@@ -6,7 +6,7 @@
     padding-bottom: 100px;
     background-image: url('/images/partners/partners_bg.webp'), linear-gradient(106.46deg, #CEBADF -1.98%, #F0D2E9 95.13%);
     background-size: contain, 100%;
-    background-position: center, center;
+    background-position: right center;
     background-repeat: no-repeat;
 }
 
@@ -81,57 +81,152 @@
 
 .top {
     background: url('/images/partners/top.png') center center no-repeat;
-    top: 19%;
-    right: 12%;
+    top: 0%;
+    right: -3%;
 }
 
 .centr {
     background: url('/images/partners/centr.png') center center no-repeat;
-    top: 27%;
-    right: 27%;
+    top: 21%;
+    right: 16%;
 }
 
 .bottom {
     background: url('/images/partners/bottom.png') center center no-repeat;
-    top: 33%;
-    right: 12%;
+    top: 30%;
+    right: -9%;
 }
 
-@media (max-width: 1180px) {
-    .top {
-        top: 0%; 
-        right: 15%;
+@media (max-width: 1680px) {
+    .partners {
+        background-size: 58%, 100%;
+        background-position: 91% 71%;
     }
 
     .centr {
-        top: 17%;
-        right: 27%;
+        top: 28%;
+        right: 22%;
     }
 
     .bottom {
-        top: 27%;
-        right: 8%;
+        top: 36%;
+        right: 2%;
+    }
+
+    .top {
+        top: 7%;
+        right: 7%;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
+    .centr {
+        top: 20%;
+        right: 25%;
+    }
+
+    .bottom {
+        top: 25%;
+        right: 9%;
+    }
+
     .top {
-        top: 10%; 
+        top: 0%;
+        right: 12%;
+    }
+}
+
+@media (max-width: 1367px) {
+    .top {
+        top: -11%;
+        right: 7%;
+    }
+
+    .centr {
+        top: 7%;
+        right: 23%;
+    }
+
+    .bottom {
+        top: 14%;
+        right: 2%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .top {
+        top: -7%;
         right: 12%;
     }
 
     .centr {
-        top: 17%; 
-        right: 30%;
+        top: 11%;
+        right: 26%;
     }
 
     .bottom {
-        top: 27%;
-        right: 8%;
+        top: 14%;
+        right: 6%;
+    }
+
+    .partners {
+        overflow-y: hidden;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1153px) {
+    .top {
+        top: 17%;
+        right: 12%;
+    }
+
+    .centr {
+        top: 33%;
+        right: 26%;
+    }
+
+    .bottom {
+        top: 37%;
+        right: 9%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bottom {
+        top: 37%;
+        right: 6%;
+    }
+
+    .partners {
+        background-size: 62%, 100%;
+        background-position: 97% 94%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .top {
+        top: 13%;
+        right: 12%;
+    }
+
+    .centr {
+        top: 30%;
+        right: 26%;
+    }
+
+    .bottom {
+        top: 33%;
+        right: 3%;
+    }
+
+    .partners {
+        overflow-y: scroll;
+    }
+}
+
+
+@media (max-width: 640px) {
     .top,
     .centr,
     .bottom {
