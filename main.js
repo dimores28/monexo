@@ -100,3 +100,37 @@ $('.mobile-menu__item').on('click', function() {
 
   $('#burger-btn').trigger('click');
 })
+
+function stepAnimation() {
+  let stN = 0;
+
+  setInterval(function(){
+    if(stN === 0) {
+      for(let i = 1; i < 14; i++) {
+        SVG(`#step-${i}`).attr({'fill-opacity': 0});
+      }
+
+      stN++;
+      return;
+    }
+
+    SVG(`#step-${stN}`).attr({'fill-opacity': 0.7});
+    stN++;
+
+    if(stN >= 14) {
+      stN = 0;
+    }
+    
+  },1000);
+
+}
+
+
+stepAnimation();
+// var rect = SVG('#step-2');
+// rect.attr({'fill-opacity': 1});
+
+$('.cards__btn-group button').on('click', function() {
+  $('.cards__btn-group button').removeClass('active');
+  $(this).addClass('active');
+});

@@ -13,7 +13,9 @@
       font-size: 32px;
       line-height: 112.5%;
       color: #2C2C2C;
+      margin-bottom: 40px;
    }
+
 }
 
 .invest-bg {
@@ -25,17 +27,51 @@
    background-size: contain, 70%;
 }
 
+.shoe-marks {
+   width: 100%;
+}
+
+.wallk-animation {
+   width: 50%;
+}
+
+
+.step {
+   display: none;
+   width: calc(100% / 2 - 30px);
+   margin-left: 15px;
+   margin-right: 15px;
+   margin-bottom: 20px;
+   padding: 60px 20px;
+   text-align: center;
+
+   background: #FFFFFF;
+   border: 3px solid #2C2C2C;
+   border-radius: 32px;
+
+   &__number {
+      font-family: 'Everett';
+      color: #6425FE;
+      font-weight: 500;
+      font-size: 82px;
+   }
+
+   &__desc {
+      font-family: 'Everett';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 117%;
+      color: #2C2C2C;
+   }
+}
+
 @media (max-width: 1024px) {
    .invest-bg {
       background-size: 50%, 70%;
    }
 }
 
-// @media (max-width: 920px) {
-//    .start-investing {
-//       height: 100vh;
-//    }
-// }
 
 @media (max-width: 860px) {
    .invest-bg {
@@ -51,14 +87,37 @@
 
 @media (max-width: 660px) {
    .invest-bg {
-      background-image: url("/images/invest/table.webp");
-      background-size: contain;
+      background-image: unset;
+   }
+
+   .wallk-animation {
+      display: none;
+   }
+
+   .step {
+      display: block;
    }
 }
 
-@media (max-width: 360px) {
-   .invest-bg {
-      background-size: 100%;
-      background-position: 100% 74%;
+@media (max-width: 610px) {
+   .step {
+      width: calc(100% - 30px);
    }
 }
+
+
+@media (max-width: 340px) {
+   .step {
+
+      &__number {
+         font-size: 72px;
+      }
+
+      &__desc {
+         font-size: 28px;
+      }
+   }
+}
+
+
+ 
