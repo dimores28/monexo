@@ -49,6 +49,7 @@
 
     .home-page {
         padding-bottom: 30px;
+        overflow-y: unset;
     }
 }
 
@@ -144,6 +145,13 @@
     }
 }
 
+@media (max-width: 640px) {
+    .home-page-contemt {
+        transform: scale(100%);
+        padding-bottom: 60px;
+    }
+}
+
 @media (max-width: 520px) {
     .offer {
         max-width: 100%;
@@ -158,10 +166,6 @@
         } 
     }
 
-    .home-page-contemt {
-        transform: scale(100%);
-        padding-bottom: 30px;
-    }
 }
 
 

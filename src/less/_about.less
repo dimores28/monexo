@@ -93,17 +93,28 @@
    .about-container {
       transform: scale(95%);
    }
+
+   .about {
+      overflow-y: unset;
+   }
 }
 
 @media (max-width: 1517px) {
    .about__logo {
       right: 26%;
    }
+
+   .about__bg {
+      background-image: url(/images/about/about_bg.webp);
+      background-position: 90% 78%;
+      background-size: 40%;
+  }
 }
 
 @media (max-width: 1281px) {
    .about__logo {
-      right: 30%;
+      top: 24%;
+      right: 23%;
    }
 
 
@@ -114,9 +125,9 @@
 }
 
 @media (max-width: 1140px) {
-   .about__logo {
-      right: 34%;
-   }
+   // .about__logo {
+   //    right: 34%;
+   // }
 
    .about-us {
 
@@ -141,7 +152,7 @@
    }
 
    .about-us {
-      width: 65%; 
+      width: 75%; 
 
       &__text {
          max-width: 378px;
@@ -163,18 +174,19 @@
 
 @media (max-width: 768px) {
    .about-us {
-      padding-top: 150px;
+      padding-top: 200px;
       padding-bottom: 30px;
    }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 640px) {
+
    .about-us {
       padding-top: 100px;
    }
 
    .about {
-      padding-bottom: 80px;
+      padding-bottom: 60px;
    }
 }
 
