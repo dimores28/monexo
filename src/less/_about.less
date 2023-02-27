@@ -3,7 +3,7 @@
    height: 100%;
    overflow-y: scroll;
    background: linear-gradient(180.36deg, #B8DFED 46.73%, #C9C5EB 97.72%);
-   padding-bottom: 100px;
+   padding-bottom: 70px;
    position: relative;
 
    &__bg {
@@ -12,7 +12,7 @@
       left: 0;
       bottom: 0;
       right: 0;
-      background-image: url('/images/about/about_bg.webp');
+      background-image: url('/images/about/about_bg1.webp');
       background-position: right center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -86,6 +86,12 @@
       top: -14px;
       right: -50px;
       animation: arrow 2s infinite;
+   }
+}
+
+@media (max-width: 1536px) {
+   .about-container {
+      transform: scale(95%);
    }
 }
 

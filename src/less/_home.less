@@ -80,6 +80,18 @@
     bottom: 15%;
 }
 
+@media (max-width: 1536px) {
+    .home-page-contemt {
+        transform: scale(90%);
+    }
+}
+
+@media (max-width: 1200px) {
+    .home-page {
+        background-size: 51%;
+    }
+}
+
 @media (max-width: 1140px) {
     .offer {
         max-width: 60%;
@@ -88,7 +100,7 @@
 
 @media (max-width: 920px) {
     .home-page {
-        height: 100%;
+        background: linear-gradient(180deg, #BDF3CC 0%, #C5EEC7 35%, #B3EEC9 98.23%);
     }
     
     .offer {
@@ -102,6 +114,12 @@
         &__title {
             font-size: 76px;
         }
+    }
+
+    .top-img,
+    .center-img,
+    .bottom-img  {
+        display: none;
     }
 }
 
@@ -120,10 +138,9 @@
         } 
     }
 
-    .top-img,
-    .center-img,
-    .bottom-img  {
-        display: none;
+    .home-page-contemt {
+        transform: scale(95%);
+        padding-bottom: 20px;
     }
 }
 
@@ -141,9 +158,9 @@
         } 
     }
 
-    .home-page {
-        background:  linear-gradient(180deg, #BDF3CC 0%, #C5EEC7 35%, #B3EEC9 98.23%);
-        padding-right: 30px;
+    .home-page-contemt {
+        transform: scale(100%);
+        padding-bottom: 30px;
     }
 }
 

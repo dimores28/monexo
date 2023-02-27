@@ -6,9 +6,8 @@ import './src/js/slick.min.js'
 window.$ = $;
 
 
- document.querySelector('#burger-btn').addEventListener('click', function(){
-     let nav = document.querySelector('.mobile-navigatiion');
-     nav.classList.toggle('show');
+$('#burger-btn').on('click', function() {
+  $('.mobile-navigatiion').slideToggle("slow")
 });
 
 const pageWidth = document.documentElement.scrollWidth;
@@ -133,4 +132,5 @@ stepAnimation();
 $('.cards__btn-group button').on('click', function() {
   $('.cards__btn-group button').removeClass('active');
   $(this).addClass('active');
+  $('.cards__header').text($(this).text());
 });
