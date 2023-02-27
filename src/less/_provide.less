@@ -56,37 +56,6 @@
 
 }
 
-@media (min-width: 1500px) {
-    .service {
-        width: calc(100% / 12 * 3 - 30px); 
-    }
-}
-
-@media (max-width: 1024px) {
-    .service {
-        width: calc(100% / 2 - 30px); 
-    }
-}
-
-// @media (max-width: 912px) {
-//     .provide {
-//         height: 100%;
-//     }
-// }
-
-@media (max-width: 670px) {
-    .service {
-        width: calc(100% - 30px); 
-
-        &__name {
-            font-size: 28px;
-        }
-
-        &__desc {
-            font-size: 18px;
-        }
-    }
-}
 
 .services {
     position: relative;
@@ -136,16 +105,97 @@
     margin-top: -50%;
 }
 
+@media (max-width: 1536px) {
+    .service {
+        width: calc(100% / 12 * 4 - 30px); 
+        transform: scale(90%);
+
+        &__name {
+            font-size: 28px;
+            line-height: 87%;
+            margin-bottom: 19px;
+        }
+    
+        &__desc {
+            font-size: 18px;
+            line-height: 115%;
+            color: #2C2C2C;
+        }
+    }
+
+    .screan-shot {
+        width: 131px;
+        height: 94px;
+    }
+
+    .show-screanshot {
+        width: 240px;
+        height: 500px;
+    }
+
+    .provide {
+        overflow-y: unset;
+    }
+}
+
+@media (max-width: 1114px) {
+
+    .service {
+        padding: 34px 26px;
+
+        &__name {
+            font-size: 24px;
+        }
+    
+        &__desc {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .service {
+        width: calc(100% / 2 - 30px); 
+    }
+
+    .provide {
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 670px) {
+    .service {
+        width: calc(100% - 30px); 
+
+        &__name {
+            font-size: 28px;
+        }
+
+        &__desc {
+            font-size: 18px;
+        }
+    }
+
+}
+
 @media (max-width: 576px) {
     .provide {
         padding-top: 0;
-        padding-bottom: 80px;
+        padding-bottom: 20px;
     }
 }
 
 @media (max-width: 570px) {
     .show-screanshot {
-        margin-left: -2%;
+        margin-top: -90%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 417px) {
+    .show-screanshot {
+        margin-top: -140%;
+        margin-left: 10%;
     }
 }
 
@@ -154,17 +204,10 @@
         transform: scale(80%);
     }
 
-    // 25% {
-    //     transform: scale(100%);
-    // }
 
     50% {
         transform: scale(110%);
     }
-
-    // 75% {
-    //     transform: scale(90%);
-    // }
 
     100% {
         transform: scale(80%);

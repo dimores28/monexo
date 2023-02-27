@@ -25,12 +25,20 @@
 
 @media (max-width: 1536px) {
    .offers-container {
-      transform: scale(80%);
+      transform: scale(90%);
    }
 
    .offers {
-      padding-top: 130px;
+      padding-top: 160px;
       padding-bottom: 50px;
+      overflow-y: unset;
+   }
+   
+}
+
+@media (max-width: 1440px) {
+   .offers-container {
+      transform: scale(95%);
    }
    
 }
@@ -176,7 +184,35 @@
    }
 }
 
-@media (max-width: 1368px) {
+@media (max-width: 1400px) {
+   .cards {
+      transform: scale(98%);
+
+      &__item {
+         padding: 20px 22px 26px;
+      }
+
+      &__header {
+         font-size: 28px;
+      }
+   }
+
+   .table  {
+      &__header,
+      &__footer,
+      &__ticker {
+         font-size: 22px;
+         line-height: 87%;
+      }
+
+      &__footer {
+         min-width: unset;
+      }
+   }
+   
+}
+
+@media (max-width: 968px) {
    .offers {
       padding-bottom: 80px;
    }
@@ -203,6 +239,10 @@
    .cards {
       width: calc(100% / 12 * 11 - 30px);
       transform: scale(100%);
+   }
+
+   .offers {
+      overflow-y: scroll;
    }
 }
 

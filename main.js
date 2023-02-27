@@ -44,24 +44,33 @@ $('#reviews-slider').slick({
     centerPadding: '10px',
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1536,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 4,
         }
       },
       {
-        breakpoint: 720,
+        breakpoint: 1180,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 912,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
           centerPadding: '5px',
         }
       }
