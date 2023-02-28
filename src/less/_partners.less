@@ -1,7 +1,7 @@
 .partners {
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
+    // overflow-y: scroll;
     padding-top: 200px;
     padding-bottom: 100px;
     background-image: url('/images/partners/partners_bg.webp'), linear-gradient(106.46deg, #CEBADF -1.98%, #F0D2E9 95.13%);
@@ -241,9 +241,6 @@
         background-position: 97% 94%;
     }
 
-    .partners {
-        overflow-y: scroll;
-    }
 }
 
 @media (max-width: 912px) {
@@ -312,7 +309,6 @@
     }
 }
 
-
 @media (max-width: 660px) {
     .top,
     .centr,
@@ -332,6 +328,12 @@
         transform: scale(100%);
     }
 }
+
+@media (max-height: 660px) { 
+    .partners {
+        overflow-y: scroll;
+    }
+ }
 
 @keyframes fluctuations {
     0% {
