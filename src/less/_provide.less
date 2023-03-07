@@ -80,6 +80,17 @@
     margin-left: 35%;
     margin-top: -80px;
     cursor: pointer;
+
+    &__viewport {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
 } 
 
 .screan-shot::after {
@@ -101,8 +112,12 @@
 .show-screanshot {
     transform: rotate(0);
     width: 300px;
-    height: 600px;
+    height: 400px;
     margin-top: -50%;
+}
+
+.show-screanshot.screan-shot::after {
+    bottom: -12px;
 }
 
 @media (max-width: 1536px) {
@@ -134,7 +149,7 @@
 
     .show-screanshot {
         width: 240px;
-        height: 500px;
+        height: 340px;
     }
 
     .provide {
