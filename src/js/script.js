@@ -133,5 +133,9 @@ $('#burger-btn').on('click', function() {
  $('.cards__btn-group button').on('click', function() {
    $('.cards__btn-group button').removeClass('active');
    $(this).addClass('active');
-   $('.cards__header').text($(this).text());
+  //  $('.cards__header').text($(this).text());
+
+  const tab = $(this).attr('data-target');
+
+   $('.cards__view').html( $(`#${tab}`).html() );
  });
