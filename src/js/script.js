@@ -139,3 +139,23 @@ $('#burger-btn').on('click', function() {
 
    $('.cards__view').html( $(`#${tab}`).html() );
  });
+
+ $('.slide__btn').on('click', function(){
+    let player = $(this).siblings('.slide__video');
+    player.trigger('play');
+    
+ });
+
+ $('.slide__video').on('click', function() {
+
+  var mediaVideo = $(this).get(0);
+
+   if (mediaVideo.paused) {
+       mediaVideo.play();
+   } else {
+       mediaVideo.pause();
+  }
+
+ });
+
+ $('.cards__btn-group button:first-child').trigger('click');
