@@ -180,6 +180,10 @@
     .provide {
         overflow-y: scroll;
     }
+
+    .service-check {
+        order: 1;
+    }
 }
 
 @media (max-width: 670px) {
@@ -236,5 +240,16 @@
 
     100% {
         transform: scale(80%);
+    }
+}
+
+.partners-small-bg {
+    display: none;
+}
+
+@media (max-width: 570px) {
+    .partners-small-bg {
+        margin-top: 20px;
+        display: block;
     }
 }
