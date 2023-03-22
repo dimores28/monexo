@@ -141,21 +141,43 @@ $('#burger-btn').on('click', function() {
  });
 
  $('.slide__btn').on('click', function(){
-    let player = $(this).siblings('.slide__video');
-    player.trigger('play');
+    let player = $(this).siblings('.slide__video').get(0);
+    // player.trigger('play');
+
+    if(player.paused) {
+      player.play();
+    }else {
+      player.pause();
+    }
     
  });
 
  $('.slide__video').on('click', function() {
 
+  const pageWidth = document.documentElement.scrollWidth;
+
   var mediaVideo = $(this).get(0);
 
-   if (mediaVideo.paused) {
-       mediaVideo.play();
-   } else {
-       mediaVideo.pause();
-  }
+    if(pageWidth > 570) {
+      if (mediaVideo.paused) {
+            mediaVideo.play();
+      } else {
+            mediaVideo.pause();
+      }
+    }
 
  });
 
  $('.cards__btn-group button:first-child').trigger('click');
+
+ $('#openPopup').on('click', function() {
+    $('.popup').show();
+ });
+
+ $('.popup__overlay').on('click', function() {
+    $('.popup').hide();
+ });
+
+$('#closePopup').on('click', function() {
+  $('.popup').hide();
+});

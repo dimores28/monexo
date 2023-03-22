@@ -74,10 +74,12 @@
 
 .footer-navigates {
     display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin-left: 20px;
 }
 
 .footer-menu {
-    margin-left: 32px;
 
     &__item {
         margin-bottom: 30px;
@@ -113,6 +115,27 @@
     color: #FFFFFF;
 }
 
+
+.presentation a {
+    display: block;
+    font-family: 'Everett';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 38px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+
+    margin-bottom: 30px;
+}
+
+.presentation a:hover,
+.presentation a:active,
+.presentation a:focus {
+    color: #6425FE;
+}
+
 @media (max-width: 1536px) {
     .footer {
         padding-top: 220px;
@@ -120,7 +143,28 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .presentation a {
+        font-size: 18px;
+    }
+
+    .footer-menu {
+        &__item a {
+            font-size: 18px;
+        } 
+    }
+}
+
 @media (max-width: 860px) {
+
+    .footer-navigates {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .presentation {
+        margin-right: 32px;
+    }
 
     .footer {
         overflow-y: scroll;
@@ -145,12 +189,12 @@
         padding-top: 160px;
     }
     
-    .footer-menu {
-        &__item a {
-            font-size: 24px;
-            line-height: 28px;
-        }
-    }
+    // .footer-menu {
+    //     &__item a {
+    //         font-size: 24px;
+    //         line-height: 28px;
+    //     }
+    // }
 
     .social__text {
         font-size: 24px;
@@ -188,3 +232,4 @@
         height: auto;
     }
 }
+
